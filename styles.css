@@ -19,3 +19,66 @@
     
     text-shadow: black 0px 0px 5px;
 }
+
+footer{
+    background: purple;
+    color:white;
+    text-align: center;
+    padding:2px;
+}
+
+
+.contatos{
+    font-family:sans-serif;
+    text-decoration: none;
+    background: black ;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    
+    
+}
+.contatos .icones a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border:0.2rem solid lightgreen;
+    font-size:1.5rem;
+    border-radius:50%;
+    transition:0.3s ease;
+    color: white;
+    margin: 0rem 0.5rem 0rem;
+}
+.contatos .icones a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: lightgreen;
+    box-shadow: 0 0 25px lightgreen;
+}
+
+#contate input{
+    text-align: center;
+    width: 20%;
+    margin: 0px 0px 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 28px;
+    border: 4px solid white; 
+    
+}
+
+#contate input:focus{
+    border: 4px solid #a776d4;
+    outline: none;
+ 
+  }
+#contate input:valid{
+    border: 4px solid #71d300;
+}
+
+
