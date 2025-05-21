@@ -89,3 +89,12 @@ header {
     height: auto;
     display: block;
 }
+.header-content h1,
+.header-content h2,
+.header-content ul,
+.social-icons,
+.logo {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
