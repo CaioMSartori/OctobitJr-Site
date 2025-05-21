@@ -29,25 +29,47 @@ body {
 header {
     background-color: #dbdad9;
     width: 100%;
-    text-align: center;
     padding: 20px 0;
-}
-header div {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: space-between;
+    align-items: center;
 }
-header div img {
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 0.8;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 100px;
+    margin-bottom: 75px;
+}
+.header-content h1 {
+    font-size: 40px;
+}
+.header-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    max-width: 600px;
+}
+.header-content ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+.header-content li {
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 170px;
+}
+.logo img {
     width: 500px;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-header div h2 {
-    position: relative;
-    bottom: 30px;
 }
