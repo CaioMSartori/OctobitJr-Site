@@ -19,66 +19,98 @@
     
     text-shadow: black 0px 0px 5px;
 }
-
 footer{
-    background: purple;
-    color:white;
-    text-align: center;
-    padding:2px;
-}
-
-
-.contatos{
-    font-family:sans-serif;
     text-decoration: none;
-    background: black ;
-    color: white;
-    padding: 5px;
-    font-size: 1rem;
-    text-align: center;
-    
-    
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    background: black;
+    color:white;
+    max-width: 100vw;
+    overflow: hidden;
 }
-.contatos .icones a{
+
+
+#footer-content{
+    
+    letter-spacing: 1px;
+     width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem 3.5rem;
+}
+
+#footer-media h2{
+    margin-bottom: 0.5rem;
+}
+
+#footer-icones a{
+    color: white;
+    background-color: transparent;
     text-decoration: none;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap:2rem;
     width: 2.5rem;
     height: 2.5rem;
-    background-color: transparent;
     border:0.2rem solid lightgreen;
-    font-size:1.5rem;
     border-radius:50%;
+    font-size:1.5rem;
     transition:0.3s ease;
-    color: white;
-    margin: 0rem 0.5rem 0rem;
+    margin: 0rem 0.5rem 1rem;
 }
-.contatos .icones a:hover{
+
+#footer-icones a:hover{
     color: black;
     transform: scale(1.3) translateY(-5px);
     background-color: lightgreen;
     box-shadow: 0 0 25px lightgreen;
 }
-
-#contate input{
-    text-align: center;
-    width: 20%;
-    margin: 0px 0px 20px;
-    padding: 10px 20px;
-    font-size: 15px;
-    border-radius: 28px;
-    border: 4px solid white; 
-    
+#footer-contate{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
 }
 
-#contate input:focus{
-    border: 4px solid #a776d4;
+#footer-formulario input{
+    
+    width: 50%;
+    padding: 5px 20px;
+    font-size: 15px;
+    border-radius: 40px;
+    border: 3px solid white; 
+}
+
+#footer-formulario input:focus{
+    border: 3px solid #a776d4;
     outline: none;
  
   }
-#contate input:valid{
-    border: 4px solid #71d300;
+#footer-formulario input:valid{
+    border: 3px solid #71d300;
+}
+#footer-formulario button{
+    background-color: #7f37c9;
+    border: none;
+    color: white;
+    width: 2.5rem;
+    font-size: 1rem;
+    border-radius: 0px 4px 4px;
 }
 
+#footer-copyright{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #471d70;
+    color: white;
+    width: 100%;
+    padding:0.5rem;
+    margin-bottom:0;
+
+}
 
