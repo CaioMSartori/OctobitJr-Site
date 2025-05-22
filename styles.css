@@ -129,6 +129,7 @@ body, nav, ul {
     margin: 0;
     box-shadow: 5px 5px 1px #67009b, -0.3px -0.3px 1px #67009b;
     transition: all 0.6s ease;
+    cursor: pointer;
 }
 
 .membro-card:hover {
