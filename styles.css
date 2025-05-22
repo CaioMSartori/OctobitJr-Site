@@ -98,3 +98,39 @@ header {
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;
 }
+.about {
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    border-style: solid;
+    border-color: #dbdad9;
+    border-radius: 10px;
+    border-width: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #761BEF;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #dbdad9;
+}
+.about ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #dbdad9;
+    list-style-type: circle;
+}
