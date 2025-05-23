@@ -1,31 +1,185 @@
+
+/* ---------------- RESET ---------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: rgb(30, 30, 30);
-    margin: 0;
+  background-color: rgb(30, 30, 30);
+  color: #dad9d7;
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
-.navbar {
-    background-color: #a776d4;
-    overflow: hidden;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
+.navbar {
+  flex-wrap: nowrap;
+  display: flex; /* Aqui cria um elemento flex em que os elementos poderão ser separado */
+  overflow: hidden; /* Esconde o conteúdo que não cabe na tela */
+  width: 100%; /* Largura total da tela */
+  position: sticky; /* Fixa a barra de navegação no topo da tela */
+  top: 0; /* Fixa a barra de navegação no topo da tela */
+  z-index: 1000;  
+  justify-content: space-between; /* separa imagem e menu */
+  align-items: center;            /* centraliza verticalmente */
+  padding: 0.3% 1rem; /* espaçamento interno para espaçar os elementosd de dentro da nav bar e o topo da navbar */
+  background-image:  /* Define a imagem de fundo para texturizar, além de adicionar um gradiente acima */
+  url(./img/Fundo/BG6.png), /* imagem de fundo */
+  linear-gradient(to right, #757575, #880b99 );
+  background-size: cover;              /* A textura cobre o navbar inteiro cobre toda a área */
+  background-blend-mode: overlay;      /* mistura textura com gradiente */
 }
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
 .navbar a {
-    color: white;
-    text-decoration: none;
+  color: #b5b4b2;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Orbitron', sans-serif;
 }
+
 .navbar a:hover {
-    text-decoration-color: purple;
-    
-    text-shadow: black 0px 0px 5px;
+  color: #99ff83;
+  text-shadow: 0 0 6px #4e0075;
 }
+
+.navbar .logo {
+  width: 100px;
+  filter: drop-shadow(0 1px 2px rgba(208, 172, 255, 0.6));
+  transition: 0.3s;
+}
+
+.navbar .logo:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- EQUIPE SECTION ---------------- */
+.equipe-content {
+  max-width: 1900px;
+  margin: 1rem ;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.equipe-content h1 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  color: #99ff83;
+  font-family: 'pixel', sans-serif;
+}
+
+/* container de grupos - mostrar colunas lado a lado */
+.area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* bloco de cada grupo */
+.coll1 {
+  flex: 1 1 300px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #232323;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-image: url(./img/Fundo/BG6.png);
+  background-size: cover;
+}
+
+.coll1 h2 {
+  margin-bottom: 1rem;
+  font-family: 'pixel', sans-serif;
+  font-size: 1.2rem;
+  color: #9800ec;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* lista de membros */
+.equipe-area {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.membro-card {
+  background: #2e2e2e;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  transition: 0.6s;
+}
+
+.membro-card:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 3px 8px #7ee56d;
+
+  h3{
+    color: #7ee56d;
+  }
+}
+
+.membro-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.membro-card h3 {
+  font-size: 1rem;
+  color: #9800ec;
+    /* text-shadow: 1px 1px 2px #000; */
+  text-align: center;
+  transition: all 0.3s;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .coll1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .membro-card {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: 'pixel';
+  src: url(./Fontes/quinque-five-font/Quinquefive-KVpBp.ttf);
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: url(./Fontes/Orbitron/Orbitron-VariableFont_wght.ttf);
+
+    
 header {
     background-color: #dbdad9;
     width: 100%;
@@ -79,6 +233,7 @@ header {
 .social-icons a:hover {
     color: #761BEF;
 }
+
 .logo {
     display: flex;
     justify-content: flex-end;
