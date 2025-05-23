@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+  
+        <!-- icones das redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
     <link rel="stylesheet" href="https://www.fontspace.com/lofty-goals-font-f76241">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> <!-- Fonte usada no banner do site -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Pra obter as logos do instagram e linkedin -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> <!-- Pra gerar a animação javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> <!-- Pra gerar a animação javascript -->
+
     <title>Octobit Jr.</title>
 </head>
 <body>
@@ -71,7 +75,9 @@
     </main>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quas et quaerat omnis explicabo ipsum atque! Fuga facere, voluptatum vel, tenetur, at perspiciatis aut quos odit maxime hic quaerat ducimus?</p>
 
-<center>
+    <script src="script.js"></script>
+
+  <center>
     <section class="equipe-content">
         <h1>Nossa Equipe</h1>
         <div class="area">
@@ -104,6 +110,73 @@
         
     </section>
 </center>
-            <script src="./scripts.js">  </script>
+  
+    <!-- projetos -->
+     <section class="projetos">
+        <h1>Projetos</h1>
+        <div id="aba">
+            <h2>ABA</h2>
+            <div class="projetos-container">
+               
+                <ul class="projetos-img">
+                    <li><img src="img-projetos/ABBA_1.png" alt="abba_1"></li>
+                    <li><img src="img-projetos/ABBA_2.png" alt="abba_2"></li>
+                    <li><img src="img-projetos/ABBA_3.png" alt="abba_3"></li>
+                </ul>
+               
+            </div>
+        </div>
+        
+        <div id="fsolar">
+            <h2>FSolar</h2>
+            <div class="projetos-container">
+             
+                <ul class="projetos-img">
+                    <li><img src="img-projetos/Cadastro_FSolar_2.png" alt="fsolar1"></li>
+                    <li><img src="img-projetos/cadastro_FSolar.png" alt="fsolar2"></li>
+                    <li><img src="img-projetos/fsolar.png" alt="fsolar3"></li>
+                    <li><img src="img-projetos/Imoveis_FSolar.png" alt="fsolar4"></li>
+                </ul>
+                
+            </div>
+        </div>
+        
+       
+     </section>
+
+        <!-- rodape -->
+    <footer>
+       
+        <div id="footer-content"> 
+            
+           <div class="footer-media">
+                <h2>Nossas redes</h2> 
+                <div id="footer-icones">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                
+            </div>
+       
+            <div id="footer-contate">
+                <h2>Fale Conosco</h2>
+                <form id="footer-formulario"> 
+                    <input type="email" id="f-email" placeholder="Digite seu email" required>
+                    <button> <i class="fa-regular fa-envelope"></i></button>
+                </form>
+            </div>
+        </div>
+            <div id="footer-copyright"> &#169 Copyright 2025 OctobitJr</p></div>
+            
+
+       
+  </footer>
+  
+
+
+ <script src="./scripts.js">  </script>
+
 </body>
 </html>
