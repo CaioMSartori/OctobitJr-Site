@@ -8,7 +8,6 @@
 
 body {
   background-color: rgb(30, 30, 30);
-  color: #dad9d7;
   font-family: sans-serif;
   line-height: 1.4;
   margin: 0;
@@ -342,12 +341,13 @@ footer{
 }
 
 header {
-    background-color: #dbdad9;
+    background: linear-gradient(to bottom, #dbdad9 80% ,rgb(30, 30, 30) 100%);
     width: 100%;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5%;
 }
 .header-content {
     display: flex;
@@ -395,12 +395,12 @@ header {
     color: #761BEF;
 }
 
-.logo {
+.banner-image {
     display: flex;
     justify-content: flex-end;
     margin-right: 170px;
 }
-.logo img {
+.banner-image img {
     width: 500px;
     height: auto;
     display: block;
@@ -409,7 +409,7 @@ header {
 .header-content h2,
 .header-content ul,
 .social-icons,
-.logo {
+.banner-image {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;

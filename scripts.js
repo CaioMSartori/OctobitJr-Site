@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     gsap.to('.header-content h2', { opacity: 1, y: 0, duration: 1, delay: 1 });
     gsap.to('.header-content ul', { opacity: 1, y: 0, duration: 1, delay: 1.5 });
     gsap.to('.social-icons', { opacity: 1, y: 0, duration: 1, delay: 2 });
-    gsap.to('.logo', { opacity: 1, y: 0, duration: 1, delay: 2.5 });
+    gsap.to('.banner-image', { opacity: 1, y: 0, duration: 1, delay: 2.5 });
     
     // Função para verificar se o elemento está visível
     function isElementInViewport(el) {
