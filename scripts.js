@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', () => {
     // Lista única de membros
     const membros = {
@@ -20,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const equipes = {
       'diretoria': ['Felipe', 'Taysa', 'Isa', 'Anna'],
       'marketing': ['Gabriela', 'Arthur','Isa'],
-      'comercial': ['Gabriel', 'Taysa', 'Yuji', 'Marcus'], // Repetição aqui é ok
+      'comercial': ['Gabriel', 'Taysa', 'Yuji', 'Marcus'],
       'Financeiro': ['Anna', 'Diogo', 'Felipe'],
       'RH': ['Vinícius', 'Caio','Felipe'],
     };
@@ -47,7 +46,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-  
 
 document.addEventListener('DOMContentLoaded', function() {
     // Animação do conteúdo do header
