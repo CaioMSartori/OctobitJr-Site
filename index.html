@@ -4,26 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+  
         <!-- icones das redes sociais -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link rel="stylesheet" href="https://www.fontspace.com/lofty-goals-font-f76241">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> <!-- Fonte usada no banner do site -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Pra obter as logos do instagram e linkedin -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> <!-- Pra gerar a animação javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> <!-- Pra gerar a animação javascript -->
+
     <title>Octobit Jr.</title>
 </head>
 <body>
-    <img src="octobit.png" alt="Octobit Logo" style="width: 100px; height: auto;">
     <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <img src="./img/Logos/Logo_OCTOBIT_Logo_Roxo_SIMBOLO.png" alt="Octobit Logo" class="logo" style="width: 100px; height: auto;">
+
+        <ul >
+            <li><a href="#header-content">Home</a></li>
+            <li><a href="#Sobre">Sobre Nós</a></li>
+            <li><a href="#Equipe">Equipe</a></li>
+            <li><a href="#Projetos">Projetos</a></li>
+            <li><a href="#footer-content">Contatos</a></li>
         </ul>
     </nav>
-    <h1>Octobit Jr.</h1>
+    <header>
+        <div class="header-content">
+            <h1>Empresa Júnior</h1>
+            <h2>Desde 2023 crescendo e inovando na computação</h2>
+            <ul>
+                <li>-> Desenvolvimento Web</li>
+                <li>-> Desenvolvimento de Apps</li>
+                <li>-> Desenvolvimento de Sistemas Computacionais</li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/octobitjr/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/octobit-empresa-j%C3%BAnior-usp" target="_blank" aria-label="Linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="img/Logo_OCTOBIT_Logo_Roxo_VERTICA.png" alt="logo_octobit">
+        </div>
+    </header>
     <main>
+        <section class="about">
+            <div class="about-container" id="about-container">
+                <h2>Sobre a Octobit Jr.</h2>
+                <p>
+                    A <strong>OctoBit Jr.</strong> é uma <strong>empresa júnior</strong> fundada e composta majoritariamente por alunos do curso 
+                    de <strong>Bacharelado em Ciência da Computação</strong>, da <strong>FFCLRP-USP</strong>. Ela realiza serviços sem fins 
+                    lucrativos, proporcionando aos membros experiências profissionais desde que ingressam no 
+                    curso, até a sua conclusão. Estão entre os <strong>objetivos</strong> da OctoBit Jr: 
+                </p>
+                <ul>
+                    <li>A capacitação profissional de seus integrantes;</li>
+                    <li>Oferecer a oportunidade aos membros da compreensão de como o mercado de trabalho de computação funciona;</li>
+                    <li>Resolver e solucionar problemas encontrados no mercado de tecnologia;</li>
+                    <li>Contribuir com empresas de pequeno ou grande porte, microempreendedores ou qualquer entidade que necessite de uma solução tecnológica para um problema encontrado.</li>
+                </ul>
+            </div>
+            <div class="about-img" id="about-img">
+                <img src="img/Programming_Purple.avif" alt="programming_img">
+            </div>
+        </section>
         <p>Octobit Jr. </p>
     </main>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quas et quaerat omnis explicabo ipsum atque! Fuga facere, voluptatum vel, tenetur, at perspiciatis aut quos odit maxime hic quaerat ducimus?</p>
+
     <script src="script.js"></script>
 
+  <center>
+    <section class="equipe-content">
+        <h1>Nossa Equipe</h1>
+        <div class="area">
+            <div class="coll1">
+                <h2> Diretoria</h2>
+                <div class="equipe-area" id="diretoria"></div>
+            </div>
+
+            <div class="coll1">
+                <h2> Marketing</h2>
+                <div class="equipe-area" id="marketing"></div>
+            </div>  
+            <div class="coll1">
+                <h2>Comercial</h2>
+                <div class="equipe-area" id="comercial"></div>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="area"> -->
+             <div class="coll1">
+                <h2>Financeiro</h2>
+                <div class="equipe-area" id="Financeiro"></div>
+            </div> 
+            <div class="coll1">
+                <h2>RH</h2>
+                <div class="equipe-area" id="RH"></div>
+            </div>
+
+        <!-- </div> -->
+
+        
+    </section>
+</center>
+  
     <!-- projetos -->
      <section class="projetos">
         <h1>Projetos</h1>
@@ -87,5 +174,9 @@
        
   </footer>
   
+
+
+ <script src="./scripts.js">  </script>
+
 </body>
 </html>
