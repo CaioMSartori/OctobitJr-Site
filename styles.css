@@ -142,3 +142,9 @@ header {
     display: block;
     border-radius: 10px;
 }
+.about-container,
+.about-img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
