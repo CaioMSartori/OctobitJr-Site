@@ -179,7 +179,7 @@ body {
 /* ----- FOOTER ----- */
 footer {
   text-decoration: none;
-  font-family:sans-serif;
+  font-family: 'Orbitron', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing:border-box;
@@ -193,7 +193,7 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  padding: 1rem 3.5rem;
+  padding: 3.5rem 3.5rem;
 }
 
 #footer-media h2 {
@@ -214,7 +214,7 @@ footer {
   border-radius:50%;
   font-size:1.5rem;
   transition:0.3s ease;
-  margin: 0rem 0.5rem 1rem;
+  margin: 1rem 0.5rem 1rem;
 }
 
 #footer-icones a:hover {
@@ -232,6 +232,7 @@ footer {
 
 #footer-formulario input {
   width: 50%;
+  margin-top:1rem;
   padding: 5px 20px;
   font-size: 15px;
   border-radius: 40px;
@@ -269,7 +270,7 @@ footer {
 
 /* -----PROJETOS----- */
 .projetos {
-  font-family:sans-serif;
+ font-family: 'pixel', sans-serif;
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
@@ -281,15 +282,17 @@ footer {
 }
 
 .projetos h1 {
-  font-size: 40px;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  color: #99ff83;
   text-align: center;
 }
 
 .projetos h2 {
   font-size: 24px;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #761BEF;
+  padding: 2.5rem;
+  color: #9800ec;
+  border-bottom: 2px solid #1b0e2b;
+  text-align: center;
 }
 
 .projetos-container {
@@ -297,6 +300,12 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
+  border: 2px solid #1b0e2b;
+  border-radius: 0.5rem;
+  background: #232323; 
+   background-image: url(./img/Fundo/BG6.png);
+ background-size: cover;
+
 }
 
 .projetos-img {
@@ -314,6 +323,7 @@ footer {
   flex: 0 0 calc(33.333% - 10px);
   overflow: hidden;
   transition: transform 0.3s ease;
+  
 }
 
 .projetos-img li:hover {
