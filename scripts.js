@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', () => {
     // Lista única de membros
     const membros = {
@@ -20,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const equipes = {
       'diretoria': ['Felipe', 'Taysa', 'Isa', 'Anna'],
       'marketing': ['Gabriela', 'Arthur','Isa'],
-      'comercial': ['Gabriel', 'Taysa', 'Yuji', 'Marcus'], // Repetição aqui é ok
+      'comercial': ['Gabriel', 'Taysa', 'Yuji', 'Marcus'],
       'Financeiro': ['Anna', 'Diogo', 'Felipe'],
       'RH': ['Vinícius', 'Caio','Felipe'],
     };
@@ -47,7 +46,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-  
 
 document.addEventListener('DOMContentLoaded', function() {
     // Animação do conteúdo do header
@@ -55,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     gsap.to('.header-content h2', { opacity: 1, y: 0, duration: 1, delay: 1 });
     gsap.to('.header-content ul', { opacity: 1, y: 0, duration: 1, delay: 1.5 });
     gsap.to('.social-icons', { opacity: 1, y: 0, duration: 1, delay: 2 });
-    gsap.to('.logo', { opacity: 1, y: 0, duration: 1, delay: 2.5 });
+    gsap.to('.banner-image', { opacity: 1, y: 0, duration: 1, delay: 2.5 });
     
     // Função para verificar se o elemento está visível
     function isElementInViewport(el) {
@@ -69,13 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
     function animateOnScroll() {
         const aboutContainer = document.querySelector('.about-container');
         const aboutImg = document.querySelector('.about-img');
+        const equipe = document.querySelector('.equipe-content');
+        const projetos = document.querySelector('.projetos');
 
         if (isElementInViewport(aboutContainer)) {
             gsap.to(aboutContainer, { opacity: 1, y: 0, duration: 0.7 });
         }
-
         if (isElementInViewport(aboutImg)) {
             gsap.to(aboutImg, { opacity: 1, y: 0, duration: 0.7, delay: 0.3 });
+        }
+        if(isElementInViewport(equipe)) {
+            gsap.to(equipe, { opacity: 1, y: 0, duration: 0.7 });
+        }
+        if(isElementInViewport(projetos)) {
+            gsap.to(projetos, { opacity: 1, y: 0, duration: 0.7 });
         }
     }
 
