@@ -73,15 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isElementInViewport(aboutContainer)) {
             gsap.to(aboutContainer, { opacity: 1, y: 0, duration: 0.7 });
         }
-
         if (isElementInViewport(aboutImg)) {
             gsap.to(aboutImg, { opacity: 1, y: 0, duration: 0.7, delay: 0.3 });
         }
         if(isElementInViewport(equipe)) {
-            gsap.to(equipe  , { opacity: 1, y: 0, duration: 0.7, delay: 0.3 });
+            gsap.to(equipe, { opacity: 1, y: 0, duration: 0.7 });
         }
         if(isElementInViewport(projetos)) {
-            gsap.to(projetos  , { opacity: 1, y: 0, duration: 0.7, delay: 0.3 });
+            gsap.to(projetos, { opacity: 1, y: 0, duration: 0.7 });
         }
     }
 
