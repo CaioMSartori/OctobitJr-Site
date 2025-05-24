@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function animateOnScroll() {
         const aboutContainer = document.querySelector('.about-container');
         const aboutImg = document.querySelector('.about-img');
+        const equipe = document.querySelector('.equipe-content');
+        const projetos = document.querySelector('.projetos');
 
         if (isElementInViewport(aboutContainer)) {
             gsap.to(aboutContainer, { opacity: 1, y: 0, duration: 0.7 });
@@ -74,6 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (isElementInViewport(aboutImg)) {
             gsap.to(aboutImg, { opacity: 1, y: 0, duration: 0.7, delay: 0.3 });
+        }
+        if(isElementInViewport(equipe)) {
+            gsap.to(equipe  , { opacity: 1, y: 0, duration: 0.7, delay: 0.3 });
+        }
+        if(isElementInViewport(projetos)) {
+            gsap.to(projetos  , { opacity: 1, y: 0, duration: 0.7, delay: 0.3 });
         }
     }
 
