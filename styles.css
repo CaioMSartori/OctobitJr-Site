@@ -1,4 +1,8 @@
-/* -----GLOBAL----- */
+/* ----- GLOBAL ----- */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +19,7 @@ body {
   height: 100%;
 }
 
-/* -----NAVBAR----- */
+/* ----- NAVBAR ----- */
 .navbar {
   flex-wrap: nowrap;
   display: flex; /* Aqui cria um elemento flex em que os elementos poderão ser separado */
@@ -64,7 +68,7 @@ body {
   transform: scale(1.05);
 }
 
-/* -----EQUIPE----- */
+/* ----- EQUIPE ----- */
 .equipe-content {
   max-width: 1900px;
   margin: 1rem ;
@@ -194,11 +198,14 @@ footer {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   padding: 3.5rem 3.5rem;
+}
 
+#footer-media {
+  margin-left: 250px;
 }
 
 #footer-media h2 {
-  margin-bottom: 0.5rem;
+  margin-left: 18px;
 }
 
 #footer-icones a {
@@ -231,6 +238,10 @@ footer {
   gap:0.5rem;
 }
 
+#footer-contate h2 {
+  margin-left: 60px;
+}
+
 #footer-formulario input {
   width: 50%;
   margin-top:1rem;
@@ -250,12 +261,20 @@ footer {
 }
 
 #footer-formulario button {
-  background-color: #7f37c9;
-  border: none;
+  background-color: #761BEF;
+  border: 1px solid #dbdad9;
   color: #dbdad9;
   width: 2.5rem;
+  height: 1.35rem;
   font-size: 1rem;
-  border-radius: 0px 4px 4px;
+  border-radius: 5px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+#footer-formulario button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(127, 55, 201, 0.6);
 }
 
 #footer-copyright {
@@ -269,7 +288,7 @@ footer {
   margin-bottom:0;
 }
 
-/* -----PROJETOS----- */
+/* ----- PROJETOS ----- */
 .projetos {
  font-family: 'pixel', sans-serif;
   padding: 20px;
@@ -301,12 +320,11 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 2px solid #1b0e2b;
+  border: 4px solid #761BEF;
   border-radius: 0.5rem;
   background: #232323; 
-   background-image: url(./img/Fundo/BG6.png);
- background-size: cover;
-
+  background-image: url(./img/Fundo/BG6.png);
+  background-size: cover;
 }
 
 .projetos-img {
@@ -324,12 +342,11 @@ footer {
   flex: 0 0 calc(33.333% - 10px);
   overflow: hidden;
   transition: transform 0.3s ease;
-  
 }
 
 .projetos-img li:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(127, 55, 201, 0.6); 
+  box-shadow: 0px 10px 20px rgba(127, 55, 201, 0.6);
 }
 
 .projetos-img img {
@@ -341,7 +358,7 @@ footer {
   padding: 3px; 
 }
 
-/* -----HEADER----- */
+/* ----- HEADER ----- */
 header {
   background: linear-gradient(to bottom, #dbdad9 80% ,rgb(30, 30, 30) 100%);
   width: 100%;
@@ -372,6 +389,7 @@ header {
   font-weight: bold;
   margin: 10px 0 20px 0;
   max-width: 600px;
+  line-height: 1.2;
 }
 
 .header-content ul {
@@ -384,13 +402,14 @@ header {
   margin-top: 30px;
   font-size: 20px;
   font-weight: bold;
+  line-height: 1.2;
 }
 
 .social-icons {
   display: flex;
   gap: 20px;
   margin-top: 30px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .social-icons a {
@@ -427,7 +446,7 @@ header {
   transition: opacity 1s ease, transform 1s ease;
 }
 
-/* -----ABOUT----- */
+/* ----- ABOUT ----- */
 .about {
   display: flex;
   justify-content: center;
